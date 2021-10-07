@@ -1,6 +1,7 @@
 import './App.css';
 import { Paper } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import DropImage from './components/DropImage/DropImage';
 
 const theme = createTheme({
   typography: {
@@ -19,6 +20,8 @@ function App() {
           <div className='head'>
             <h2 className='head__primary'>Image Converter</h2>
             <p className='head__para'>Convert your image files online & free</p>
+            {/* DROP IMAGE */}
+            <DropImage />
           </div>
         </Paper>
       </div>
