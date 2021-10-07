@@ -5,7 +5,7 @@ import DropImage from './components/DropImage/DropImage';
 
 const theme = createTheme({
   typography: {
-    fontSize: 16,
+    fontSize: '1.6rem',
   },
 });
 
@@ -18,7 +18,7 @@ function App() {
           elevation={6}
         >
           <div className='head'>
-            <h2 className='head__primary'>Image Converter</h2>
+            <h2 className='head__primary'>Free Image Converter</h2>
             <p className='head__para'>Convert your image files online & free</p>
             {/* DROP IMAGE */}
             <DropImage />

@@ -15,3 +15,20 @@
 .dropImage__head {
   font-weight: 400;
 }
+
+.dropImage__select {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.dropImage__select__one {
+  flex: 1;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}

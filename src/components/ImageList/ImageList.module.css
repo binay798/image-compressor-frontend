@@ -1,0 +1,23 @@
+.list {
+  margin: 2rem 0;
+}
+
+.list__heading {
+  color: var(--color-dark);
+}
+
+.list__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.list__para {
+  font-weight: 400;
+  color: var(--color-gray-dark);
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
