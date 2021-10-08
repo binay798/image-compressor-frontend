@@ -5,7 +5,7 @@ import DropImage from './components/DropImage/DropImage';
 
 const theme = createTheme({
   typography: {
-    fontSize: '1.6rem',
+    htmlFontSize: 10,
   },
 });
 

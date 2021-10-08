@@ -1,7 +1,5 @@
 import React from 'react';
 import classes from './Image.module.css';
-import Icon from './../../Icon/Icon';
-import { Button } from '@mui/material';
 
 function Image(props) {
   return (

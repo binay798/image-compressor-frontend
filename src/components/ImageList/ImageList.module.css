@@ -1,5 +1,6 @@
 .list {
   margin: 2rem 0;
+  margin-bottom: 6rem;
 }
 
 .list__heading {
@@ -20,4 +21,10 @@
   font-size: 1.4rem;
   font-style: italic;
   margin-bottom: 3rem;
+}
+
+.list__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

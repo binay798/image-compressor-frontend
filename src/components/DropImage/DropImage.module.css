@@ -19,11 +19,15 @@
 .dropImage__select {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   justify-content: space-between;
 }
 
 .dropImage__select__one {
+  flex: 1.5;
+}
+
+.dropImage__select__btn {
   flex: 1;
 }
 
@@ -31,4 +35,10 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.dropImage__download {
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
