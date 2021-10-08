@@ -13,8 +13,10 @@ import axios from './../../axiosInstance';
 import filterImages from '../../utils/filterImages';
 import Notification from './../Notification/Notification';
 
-const backendUrl = 'https://imageconverterbackend.herokuapp.com/';
-// const backendUrl = 'http://localhost:8000';
+let backendUrl = 'https://imageconverterbackend.herokuapp.com/';
+if (process.env.NODE_ENV === 'development') {
+  backendUrl = 'http://localhost:8000';
+}
 
 function DropImage() {
   const [imageFiles, setImageFiles] = useState([]);
@@ -28,6 +30,7 @@ function DropImage() {
     isError: false,
     message: '',
   });
+  console.log(process.env);
 
   const handleToChange = (e) => {
     setTo(e.target.value);

@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-// const backendUrl = 'http://localhost:8000';
-const backendUrl = 'https://imageconverterbackend.herokuapp.com/';
+let backendUrl = 'https://imageconverterbackend.herokuapp.com/';
+if (process.env.NODE_ENV === 'development') {
+  backendUrl = 'http://localhost:8000';
+}
 const axiosInstance = axios.create({
   baseURL: backendUrl,
   headers: {
