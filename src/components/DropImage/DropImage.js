@@ -30,7 +30,6 @@ function DropImage() {
     isError: false,
     message: '',
   });
-  console.log(process.env);
 
   const handleToChange = (e) => {
     setTo(e.target.value);
