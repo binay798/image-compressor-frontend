@@ -14,6 +14,7 @@ import filterImages from '../../utils/filterImages';
 import Notification from './../Notification/Notification';
 
 const backendUrl = 'https://imageconverterbackend.herokuapp.com/';
+// const backendUrl = 'http://localhost:8000';
 
 function DropImage() {
   const [imageFiles, setImageFiles] = useState([]);
