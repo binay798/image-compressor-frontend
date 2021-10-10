@@ -17,10 +17,10 @@ body {
 .App {
   background-image: linear-gradient(
       to right bottom,
-      rgba(90, 88, 224, 0.808),
-      rgba(73, 88, 221, 0.8)
+      rgba(69, 66, 243, 0.911),
+      rgba(69, 66, 243, 0.911)
     ),
-    url(./assets/images/background.jpg);
+    url(./assets/images/background.webp);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +29,15 @@ body {
   justify-content: center;
   padding: 1rem;
   background-attachment: fixed;
+}
+
+.App__container {
+  padding: 3rem;
+}
+@media only screen and (max-width: 450px) {
+  .App__container {
+    padding: 1rem;
+  }
 }
 
 .head {
@@ -46,4 +55,10 @@ body {
 .head__para {
   font-size: 1.4rem;
   color: var(--color-gray-dark);
+}
+
+@media only screen and (max-width: 450px) {
+  .head__primary {
+    font-size: 4rem;
+  }
 }

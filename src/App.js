@@ -14,7 +14,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className='App'>
         <Paper
-          sx={{ padding: '3rem', maxWidth: '70rem', width: '100%' }}
+          sx={{ maxWidth: '70rem', width: '100%' }}
+          className='App__container'
           elevation={6}
         >
           <div className='head'>

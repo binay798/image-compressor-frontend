@@ -5,6 +5,8 @@ import { Button } from '@mui/material';
 // import Icon from './../Icon/Icon';
 
 function ImageList(props) {
+  const maxImageList = props.images.slice(0, 6);
+  const totalImages = props.images.length;
   return (
     <div className={classes.list}>
       <div className={classes.list__top}>
@@ -19,9 +21,13 @@ function ImageList(props) {
         <p className={classes.list__para}>No images</p>
       ) : null}
       <div className={classes.list__container}>
-        {props.images.map((item, id) => {
+        {maxImageList.map((item, id) => {
           return <Image key={id} src={item} />;
         })}
+        {/* IF TOTAL IMAGES IS GREATER THAN 6 */}
+        {totalImages > 6 ? (
+          <div className={classes.remainingImages}>+{totalImages - 6} more</div>
+        ) : null}
       </div>
     </div>
   );

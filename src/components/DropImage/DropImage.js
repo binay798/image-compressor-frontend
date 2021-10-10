@@ -116,6 +116,7 @@ function DropImage() {
   // DOWNLOAD CONVERTED FILES
   const downloadHandler = async (e) => {
     // e.preventDefault();
+    console.log(process.env.NODE_ENV);
     try {
       const dl = document.createElement('a');
       dl.setAttribute(
@@ -210,7 +211,12 @@ function DropImage() {
             type='submit'
           >
             {loading ? (
-              <CircularProgress size={20} color='success' />
+              <div
+                style={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}
+              >
+                <CircularProgress size={20} color='success' />
+                <span>processing</span>
+              </div>
             ) : (
               'Convert'
             )}
